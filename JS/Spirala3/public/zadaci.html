@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 3</title>
+    <link rel="stylesheet" href="zadaci.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <div id="header" >
+             <div ><img src="slike/logo.jpg" alt="logo" id="logo">
+                <div id="meni">
+                    <a href="studenti.html">Z2</a>
+                    <a href="zadaci.html" >Z3</a>
+                    <a href="commiti.html" >Z4</a>
+                    <a href="addZadatak.html" >Z5</a>
+                    <a href="addVjezba.html" >Z6</a>
+                    <a href="addStudent.html">Z7</a>
+                    <a href="addGodina.html"> Z8</a>
+                </div>
+            </div>
+            <h2>Odabir vježbe</h2>
+        </div>
+
+        <div class="content">
+
+            <div class="cetvrtina">
+                <p><b>Odabir godine</b></p>
+                <div class="listviewtabela">
+                    <ul style="list-style-type:none" id="godina">
+                        <li>Godina 2014/2015</li>
+                        <li>Godina 2015/2016</li>
+                        <li>Godina 2016/2017</li>
+                        <li>Godina 2017/2018</li>
+                        <li>Godina 2018/2019</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cetvrtina">
+                <p><b>Student</b></p>
+                <form onsubmit="validacijaZadaci(event)">
+                    <input type="text" name="query" value=""><br>
+                    <input type="submit" value="Search">
+                    <div style="background-color: orangered" id="ispisGreski"></div>
+                </form>
+                <div class="listviewtabela">
+                    <ul style="list-style-type:none" id="imena">
+                        <li>Ime i prezime | index</li>
+                        <li>Neko Nekic | 12345</li>
+                        <li>Neko Nekic | 12345</li>
+                        <li>Neko Nekic | 12345</li>
+                        <li>Neko Nekic | 12345</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="polovina">
+                <div class="pomocni">
+                    Vježbe
+                    <div class="folder">
+                        <div class="item">
+                            Vjezba1
+                        </div>
+                        <div class="item">
+                            Vjezba2
+                        </div>
+                        <div class="item">
+                            Vjezba3
+                        </div>
+                        <div class="item">
+                            Vjezba4
+                        </div>
+                        <div class="item">
+                            Vjezba5
+                        </div>
+                        <div class="item">
+                            Vjezba6
+                        </div>
+                    </div>
+                </div>
+                <div class="pomocni">
+                    Spirale
+                    <div class = "folder">
+                        <div class="item">
+                            Spirala1
+                        </div>
+                        <div class="item">
+                            Spirala2
+                        </div>
+                        <div class="item">
+                            Spirala3
+                        </div>
+                        <div class="item">
+                            Spirala4
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <p><b>Web tehnologije 2018/19</b></p>
+        </div>
+
+    </div>
+    
+    <script src="./validacija.js"></script>
+    <script src="./zadaci.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Replacement for 3a</title>
+  </head>
+  <body>
+    <script src="BitBucket.js"></script>
+    <script>
+      var bbucket = new BitBucket("Key", "Secret");
+      function ispisi(greska,x){
+        if(!greska) console.log("Lista studenata \n", x);
+        else console.log("Greska je:", greska);
+      }
+      setTimeout(() => {
+        bbucket.ucitaj("wt", "rma", ispisi);
+      }, 2000)
+    </script>
+  </body>
+</html>

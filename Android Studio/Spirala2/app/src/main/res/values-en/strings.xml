@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">rma18Kalaca17479</string>
+    <string name="tekstPretragabuttona">Search</string>
+    <string name="upispretragehint">Type categories here</string>
+    <string name="stringdodajkategoriju">Add category</string>
+    <string name="stringdodajknjigu">Add book</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="StringZaNadjiSliku">Find Picture</string>
+    <string name="HintZaUpisiImeAutora">Insert  authors name</string>
+    <string name="HintZaNazivKnjige">Insert books name</string>
+    <string name="UpisiKnjigu">Confirm book</string>
+    <string name="Povratak">Back</string>
+    <string name="Ponisti">Cancle</string>
+    <string name="Autori">Authors</string>
+    <string name="Kategorije">Categories</string>
+</resources>

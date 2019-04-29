@@ -1,0 +1,38 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: #13232f;
+}   
+#login, body{
+    min-height: 100vh;
+}
+#login{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+#login form {
+    background-color:#c1bdba;
+    padding: 20px;
+}
+.input-group{
+ margin: 15px;
+}
+
+.left-align{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+input {
+    padding: 3px 8px;
+}
+button {
+    margin: 0 35px;
+    padding: 4px 20px;
+    color:black;
+}
+label{
+    font-weight: bold;
+}

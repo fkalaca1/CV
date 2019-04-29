@@ -1,0 +1,121 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    max-height: 50px;
+    display: inline-block;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: #c1bdba;
+    padding-right:10px;
+}
+
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+#footer{
+    background: #c1bdba;
+}
+
+.content{
+    display: flex;
+    flex-grow: 1;
+    background-color: #1ab188;
+    justify-content: center;
+    align-items: stretch;
+}
+#glavniSadrzaj{
+    width:85%;
+    background-color: #13232f;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+.grupa{
+    width:85%;
+}
+form{
+    background: #1ab188;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #13232f;
+}
+
+form div{
+    padding:5px 0px;
+}
+
+select{
+    width:200px;
+    height:20px;
+}
+[type="text"]{
+    width:200px;
+    height:20px;
+}
+ul{
+    background: white;
+    padding: 2px;
+    width: 200px;
+}
+.dolejedan{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.doledva{
+    display: flex;
+    flex-direction: column;
+}
+#opa{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 600px) {
+    #header {
+        display: block;
+        margin:0;
+        padding:0;
+    }
+
+    #glavniSadrzaj{
+        width:100%;
+    }
+
+    select{
+        width:100px;
+        height:20px;
+    }
+
+    [type="text"]{
+        width:100px;
+        height:20px;
+    }
+    ul{
+        background: white;
+        padding: 2px;
+        width: 100px;
+    }
+    
+}

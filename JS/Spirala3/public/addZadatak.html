@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 5</title>
+    <link rel="stylesheet" href="addZadatak.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header" >
+                <div ><img src="slike/logo.jpg" alt="logo" id="logo">
+                <div id="meni">
+                    <a href="studenti.html">Z2</a>
+                    <a href="zadaci.html" >Z3</a>
+                    <a href="commiti.html" >Z4</a>
+                    <a href="addZadatak.html" >Z5</a>
+                    <a href="addVjezba.html" >Z6</a>
+                    <a href="addStudent.html">Z7</a>
+                    <a href="addGodina.html"> Z8</a>
+                </div>
+            </div>
+            <h2>Dodavanje zadataka</h2>
+        </div>
+
+        <div class="content">
+            <div id="glavniSadrzaj">
+                <div>
+                <form id="noviZadatak" onsubmit="FormaSubmitAZ(event)">
+                    <br><br>
+                    Novi Zadatak
+                    <br><br>
+                    <div>
+                    Naziv Zadatak<br><br>
+                    <input type="text" name="naziv" value="">
+                    <br><br>
+                    Tekst postavke *<br><br>
+                    <input type="file" name="postavka"/>
+                    <br><br>
+                  
+                    </div>
+                    <div class="divzabutton">
+                        <input type="submit" value="Dodaj">
+                    </div>
+                    <div style="background-color: orangered" id="ispisGreskiAZ"></div>
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p><b>Web tehnologije 2018/19</b></p>
+        </div>
+
+    </div>
+    <script src="./validacija.js"></script>
+    <script src="./service/ajax.js"></script>
+    <script src="./addZadatak.js"></script>
+</body>
+</html>

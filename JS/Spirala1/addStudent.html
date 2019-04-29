@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 7</title>
+    <link rel="stylesheet" href="addStudent.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header" >
+                <div ><img src="slike/logo.jpg" alt="logo" id="logo"> 
+                <div id="meni">
+                    <a href="studenti.html" target="_blank">Z2</a>
+                    <a href="zadaci.html" target="_blank">Z3</a>
+                    <a href="commiti.html" target="_blank">Z4</a>
+                    <a href="addZadatak.html" target="_blank">Z5</a>
+                    <a href="addVjezba.html" target="_blank">Z6</a>
+                    <a href="addStudent.html" target="_blank">Z7</a>
+                    <a href="addGodina.html" target="_blank"> Z8</a>
+                </div>
+            </div>
+            <h2>Dodavanje  studenata</h2>
+        </div>
+
+        <div class="content">
+            <div id="glavniSadrzaj">
+                <div class="grupa">
+                    <form name="fPojedinacni">
+                        <div>
+                            Pojedinacni unos
+                        </div>
+                        <div>
+                            Godina<br>
+                            <select name="godina">
+                                <option value="8/9">2018/2019</option>
+                                <option value="7/8">2017/2018</option>
+                                <option value="6/7">2016/2017</option>
+                                <option value="5/6">2015/2016</option>
+                                <option value="4/5">2014/2015</option>
+                                <option value="3/4">2013/2014</option>
+                                <option value="2/3">2012/2013</option>
+                                <option value="1/2">2011/2012</option>
+                                <option value="0/1">2010/2011</option>
+                            </select>
+                        </div>
+                        <div>
+                            Ime i prezime<br>
+                            <input type="text" name="ime" value="">
+                        </div>
+                        <div>
+                            Index<br>
+                            <input type="number" name="index" value="">
+                        </div>
+                        <div>
+                            Email<br>
+                            <input type="email" name="email" value="">
+                        </div>
+                        <div>
+                            <input type="submit" value="Unesi" name="submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="grupa">
+                    <form name="fMasovni">
+                        <div>
+                            Masovni unos
+                        </div>
+                        <div>
+                            Godina<br>
+                            <select name="godina">
+                                <option value="8/9">2018/2019</option>
+                                <option value="7/8">2017/2018</option>
+                                <option value="6/7">2016/2017</option>
+                                <option value="5/6">2015/2016</option>
+                                <option value="4/5">2014/2015</option>
+                                <option value="3/4">2013/2014</option>
+                                <option value="2/3">2012/2013</option>
+                                <option value="1/2">2011/2012</option>
+                                <option value="0/1">2010/2011</option>
+                            </select>
+                        </div> 
+                        <div class="dolejedan">
+                            CSV file <br>
+                            <input type="file" name="csv lista"/>    
+                        </div>
+                        <div>
+                            <input type="submit" value="Unesi" name="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p><b>Web tehnologije 2018/19</b></p>
+        </div>
+    
+    </div>
+</body>
+</html>

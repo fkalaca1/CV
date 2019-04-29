@@ -1,0 +1,128 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+#logo{
+    max-height: 50px;
+    display: inline-block;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: #c1bdba;
+    padding-right:10px;
+}
+
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+#footer{
+    background: #c1bdba;
+}
+
+.content{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+#side{
+    width:35%;
+    min-height:100%;
+    background-color: #1ab188;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#glavniSadrzaj{
+    width:65%;
+    min-height:100%;
+    background-color: #13232f; 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+#side div{
+    display: flex;
+    flex-direction: column;
+}
+
+#side .zaButtone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button, [type="submit"]{
+    margin: 0px 20px;
+}
+
+.pravougaonik{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 40%;
+    align-items: center;
+}
+
+
+.godina{
+    background: white;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    border: 2px solid #13232f;
+}
+
+.godina div{
+    display:flex;
+    flex-direction: row;
+}
+
+form{
+    min-height:100%;
+    background-color: #1ab188;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+@media all and (max-width: 600px) {
+    #header {
+        display: block;
+        margin:0;
+        padding:0;
+    }
+    .content{
+        display: flex;
+        flex-direction: column; 
+        flex-grow: 1;
+    }
+    #side{
+        flex-grow: 1;
+        width:100%;
+    }
+    #glavniSadrzaj{
+        width:100%;
+        flex-grow: 1;
+    }
+    .godina{
+        height: 100px;
+        width: 100px;
+    }
+}

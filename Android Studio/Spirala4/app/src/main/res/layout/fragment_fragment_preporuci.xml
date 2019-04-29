@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentPreporuci">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:paddingHorizontal="50dp">
+        <Spinner
+            android:id="@+id/sKontakti"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></Spinner>
+        <LinearLayout
+            android:paddingTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Zdravo"
+                android:layout_weight="0.5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stxtIme"
+                android:text="_______"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Pročitajknjigu"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/txtMjestoKnjige"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="________________"
+            android:layout_weight="1"
+            android:paddingTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Pročitajknjiguod"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/txtMjestoAutora"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="________________"
+            android:layout_weight="1"
+            android:paddingTop="20dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dPosalji"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/dPosalji"/>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dPovratakizPreporuci"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/dPovratak"/>
+    </LinearLayout>
+
+
+</LinearLayout>

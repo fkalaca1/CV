@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 8</title>
+    <link rel="stylesheet" href="addGodina.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header" >
+                <div ><img src="slike/logo.jpg" alt="logo" id="logo">
+                <div id="meni">
+                    <a href="studenti.html">Z2</a>
+                    <a href="zadaci.html" >Z3</a>
+                    <a href="commiti.html" >Z4</a>
+                    <a href="addZadatak.html" >Z5</a>
+                    <a href="addVjezba.html" >Z6</a>
+                    <a href="addStudent.html">Z7</a>
+                    <a href="addGodina.html"> Z8</a>
+                </div>
+            </div>
+            <h2>Dodavanje godine</h2>
+        </div>
+
+        <div class="content">
+            <div id="side">
+                <form onsubmit="formaAGodina(event)">
+                Unos godine:
+                <div>
+                    Naziv godine
+                    <input type="text" name="nazivGod" value="">
+                </div>
+                <div>
+                    Naziv repozitorija vježbe
+                    <input type="text" name="nazivRepVje" value="">
+                </div>
+                <div>
+                    Naziv repozitorija spirale
+                    <input type="text" name="nazivRepSpi" value="">
+                </div>
+                <div class="zaButtone">
+                    <button type="reset" value="Reset">Poništi</button>
+                    <input type="submit" value="Unesi">
+                </div>
+                <div style="background-color: orangered" id="ispisGreske">
+                </div>
+                </form>
+            </div>
+            <div id="glavniSadrzaj">
+                
+            </div>
+        </div>
+
+        <div id="footer">
+            <p><b>Web tehnologije 2018/19</b></p>
+        </div>
+
+    </div>
+    <script src="./service/ajax.js"></script>
+    <script src="./validacija.js"></script>
+    <script src="./GodineAjax.js"></script>
+    <script src="./addGodina.js"></script>
+
+</body>
+</html>

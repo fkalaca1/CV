@@ -1,0 +1,101 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: #c1bdba;
+}
+#logo{
+    max-height: 50px;
+    display: inline-block;
+}
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+.content{
+    display: flex;
+    flex-grow: 1;
+}
+#side{
+    width: 35%;
+    background-color: #1ab188;
+    display: flex;
+    flex-direction: column;
+}
+.listviewtabela{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#side p{
+    text-align: center;
+}
+#side .listviewtabela ul{
+    padding: 10px;
+    background: white;
+    margin:0;
+    height:30vh;
+    overflow: scroll;
+    overflow-x:hidden;
+}
+#glavniSadrzaj{
+    flex-grow: 1;
+    background-color: #13232f;
+    display: flex;
+    flex-direction: column;
+    padding-top:0;
+}
+
+.tabeladesno{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border-spacing: unset;
+    background: white;
+    margin: 0;
+    height: 30vh;
+    text-align: left;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+th,td{
+    padding:5px  5px 5px 5px;
+}
+
+
+#footer{
+    background: #c1bdba;
+}
+@media all and (max-width: 600px) {
+    #header {
+        display: block;
+    }
+
+    .content{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+    #side{
+        width:100%;
+        padding-bottom:10px;
+    }
+    #glavniSadrzaj{
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    
+}

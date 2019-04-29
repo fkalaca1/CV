@@ -1,0 +1,95 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    max-height: 50px;
+    display: inline-block;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: #c1bdba;
+    padding-right:10px;
+}
+
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+#footer{
+    background: #c1bdba;
+}
+
+.content{
+    display: flex;
+    flex-grow: 1;
+    background-color: #1ab188;
+    justify-content: center;
+    align-items: stretch;
+}
+#glavniSadrzaj{
+    width:85%;
+    background-color: #13232f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#glavniSadrzaj div{
+    height:50%;
+    width:50%;
+}
+form{
+    background: #1ab188;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width:100%;
+    justify-content: center;
+}
+#glavniSadrzaj form div{
+    margin: 10px;
+    text-align: left;
+}
+#glavniSadrzaj form input[type="submit"]{
+    clear:both;
+}
+
+
+
+
+@media all and (max-width: 600px) {
+    #header {
+        display: block;
+        margin:0;
+        padding:0;
+    }   
+    #glavniSadrzaj form input[type="submit"]{
+        margin:0;
+    }
+    #glavniSadrzaj{
+        width:100%;
+    }
+
+    #glavniSadrzaj div{
+        height:auto;
+        width:auto;
+    }
+    
+}
+
+@media all and (max-height: 740px){
+    #glavniSadrzaj div{
+        height:auto;
+        width:auto;
+    }
+} 

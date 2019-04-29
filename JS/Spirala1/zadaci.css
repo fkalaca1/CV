@@ -1,0 +1,115 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    max-height: 50px;
+    display: inline-block;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: #c1bdba;
+    padding-right:10px;
+}
+
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+#footer{
+    background: #c1bdba;
+}
+
+.content{
+    display: flex;
+    flex-grow: 1;
+}
+
+.cetvrtina{
+    width: 25%;
+    background-color: #1ab188;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.listviewtabela{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+}
+
+.cetvrtina .listviewtabela ul{
+    padding: 8px;
+    background: white;
+    margin:0;
+    height:30vh;
+    overflow: scroll;
+    overflow-x:hidden;
+}
+#imena{
+    margin-bottom:42px;
+}
+.polovina{
+    width:50%;
+    background-color: #13232f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.polovina .pomocni{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:#1ab188;
+    margin: 10px 100px;
+}
+
+
+.folder{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height:280px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.item{
+    height:120px;
+    width:120px;
+    background:#366080;
+    margin: 10px 0px 10px 10px;
+}
+
+@media all and (max-width: 600px) {
+    #header {
+        display: block;
+    }
+
+    .content{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+    .cetvrtina{
+        width:100%;
+        padding-bottom:10px;
+    }
+    .polovina{
+        width:100%;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    
+}

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Spirala3</string>
+    <string name="tekstPretragabuttona">Pretraga</string>
+    <string name="upispretragehint">Ovdje ukucaj zanr</string>
+    <string name="stringdodajkategoriju">Dodaj zanr</string>
+    <string name="stringdodajknjigu">Dodaj Knjigu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="StringZaNadjiSliku">nadji sliku</string>
+    <string name="HintZaUpisiImeAutora">Upisi ime autora</string>
+    <string name="HintZaNazivKnjige">Upisi naziv knjige</string>
+    <string name="UpisiKnjigu">upisi knjigu</string>
+    <string name="Ponisti">ponisti</string>
+    <string name="Povratak">povratak</string>
+    <string name="Autori">Autori</string>
+    <string name="Kategorije">Kategorije</string>
+    <string name="dDodajOnline"> dodaj knjigu online</string>
+    <string name="dRun">pokreni</string>
+    <string name="dAdd">dodaj</string>
+    <string name="dPovratak">povratak</string>
+    <string name="dPreporuci">preporuci</string>
+    <string name="dPosalji">posalji</string>
+    <string name="Zdravo">Zdravo</string>
+    <string name="Pročitajknjigu">Pročitaj knjigu</string>
+    <string name="Pročitajknjiguod">od</string>
+</resources>

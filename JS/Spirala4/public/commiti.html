@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 4</title>
+    <link rel="stylesheet" href="commiti.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header" >
+                <div ><img src="slike/logo.jpg" alt="logo" id="logo"> 
+                <div id="meni">
+                    <a href="studenti.html">Z2</a>
+                    <a href="zadaci.html" >Z3</a>
+                    <a href="commiti.html" >Z4</a>
+                    <a href="addZadatak.html" >Z5</a>
+                    <a href="addVjezba.html" >Z6</a>
+                    <a href="addStudent.html">Z7</a>
+                    <a href="addGodina.html"> Z8</a>
+                </div>
+            </div>
+            <h2>Pregled commita</h2>
+        </div>
+
+        <div class="content">
+
+            <div class="spakuj"> 
+                Student: <label>Neko Nekic</label> , <label> 1234</label><br>
+                Naziv vježbe/spirale: <label>Vjezba</label><label> 1</label><br>
+                Repozitorij: <a href="#">Hyperlink</a>   
+            </div>
+
+            <div class="spakuj"> 
+                <table id="commiti">
+                    <!-- 
+                    
+                    <thead>
+                        <th>Naziv Zadatka</th>
+                        <th>Commiti</th> 
+                    </thead>
+                    <tr>
+                        <td class="prvaKolona"><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak 1</a></td>
+                        <td><a href="https://bitbucket.org" target="_blank">1</a></td> 
+                        <td><a href="https://bitbucket.org" target="_blank">2</a></td> 
+                        <td><a href="https://bitbucket.org" target="_blank">3</a></td> 
+                        <td><a href="https://bitbucket.org" target="_blank">4</a></td> 
+                        <td><a href="https://bitbucket.org" target="_blank">5</a></td> 
+                        <td><a href="https://bitbucket.org" target="_blank">6</a></td> 
+                        <td><a href="https://bitbucket.org" target="_blank">7</a></td> 
+                        <td><a href="https://bitbucket.org" target="_blank">8</a></td> 
+
+                    </tr>
+                    <tr>
+                        <td class="prvaKolona"><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak 2</a></td>
+                        <td><a href="https://bitbucket.org" target="_blank">1</a></td> 
+                        <td><a href="https://bitbucket.org" target="_blank">2</a></td> 
+                        <td><a href="https://bitbucket.org" target="_blank">3</a></td> 
+                        <td><a href="https://bitbucket.org" target="_blank">4</a></td>
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <td class="prvaKolona"><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak 3</a></td>
+                        <td><a href="https://bitbucket.org" target="_blank">1</a></td> 
+                        <td colspan="7"></td> 
+                    </tr>
+                    <tr>
+                        <td class="prvaKolona"><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak 4</a></td>
+                        <td colspan="8"></td>
+                    </tr>
+                    <tr>
+                        <td class="prvaKolona"><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak 5</a></td>
+                        <td colspan="8"></td>
+                    </tr>
+                    <tr>
+                        <td class="prvaKolona"><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak 6</a></td>
+                        <td colspan="8"></td>
+                    </tr>
+                    <tr>
+                        <td class="prvaKolona"><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit" target="_blank">Zadatak 7</a></td>
+                        <td colspan="8"></td>
+                    </tr>
+                    //-->
+                </table>
+            </div>
+            <div>
+                <form onsubmit="formatTabele(event)">
+                    Unesite broj redova
+                    <div>
+                        <input type="number" name="brRedovi">
+                    </div>
+                    <div>
+                        <input type="submit" value="Unesi" name="sub">
+                    </div>
+                </form>
+            </div>
+            <div class="Odluka">
+                <div>
+                    <form onsubmit="addC(event)">
+                        DodajCommit 
+                        <div>
+                            Broj Reda (0  -  n-1)
+                            <input type="number" name="brRed">
+                        </div>
+                        <div>
+                            URL
+                            <input type="url"  name="xUrl">
+                        </div>
+                        <div>
+                            <input type="submit" value="Unesi" name="sub">
+                        </div>
+                        <div style="background-color: orangered" id="ispisGreskiAdd"></div>
+                    </form>
+                </div>
+                <div>
+                    <form onsubmit="editC(event)">
+                        EditCommit 
+                        <div>
+                            Broj Reda (0  -  n-1)
+                            <input type="number" name="brRedE">
+                        </div>
+                        <div>
+                            Broj Kolone (Zadatak x | 0  -  n-1)
+                            <input type="number" name="brKolE">
+                        </div>
+                        <div>
+                            Novi URL
+                            <input type="url"  name="yUrl">
+                        </div>
+                        <div>
+                            <input type="submit" value="Unesi" name="sub">
+                        </div>
+                        <div style="background-color: orangered" id="ispisGreskiEdit"></div>
+                    </form>
+                </div>
+                <div>
+                    <form onsubmit="deleteC(event)">
+                        ObrisiCommit 
+                        <div>
+                            Broj Reda (0  -  n-1)
+                            <input type="number" name="brRedE">
+                        </div>
+                        <div>
+                            Broj Kolone (Zadatak x | 0  -  n-1)
+                            <input type="number" name="brKolE">
+                        </div>
+                        <div>
+                            <input type="submit" value="Unesi" name="sub">
+                        </div>
+                        <div style="background-color: orangered" id="ispisGreskiDelete"></div>
+                    </form>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div id="footer">
+            <p><b>Web tehnologije 2018/19</b></p>
+        </div>
+    
+    </div>
+    
+    <script src="./validacija.js"></script>
+    <script src="./committabela.js"></script>
+    <script src="./commiti.js"></script>
+</body>
+
+
+</html>

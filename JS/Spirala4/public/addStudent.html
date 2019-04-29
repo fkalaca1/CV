@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 7</title>
+    <link rel="stylesheet" href="addStudent.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header" >
+                <div ><img src="slike/logo.jpg" alt="logo" id="logo">
+                <div id="meni">
+                    <a href="studenti.html">Z2</a>
+                    <a href="zadaci.html" >Z3</a>
+                    <a href="commiti.html" >Z4</a>
+                    <a href="addZadatak.html" >Z5</a>
+                    <a href="addVjezba.html" >Z6</a>
+                    <a href="addStudent.html">Z7</a>
+                    <a href="addGodina.html"> Z8</a>
+                </div>
+            </div>
+            <h2>Dodavanje  studenata</h2>
+        </div>
+
+        <div class="content">
+            <div id="glavniSadrzaj">
+                <div class="grupa">
+                    <form  name="fPojedinacni" onsubmit="prvaFormaSubmit(event)">
+                        <div>
+                            Pojedinacni unos
+                        </div>
+                        <div>
+                            Godina<br>
+                            <select name="godina">
+                                <option value="2018/2019">2018/2019</option>
+                                <option value="2017/2018">2017/2018</option>
+                                <option value="2016/2017">2016/2017</option>
+                                <option value="2015/2016">2015/2016</option>
+                                <option value="2014/2015">2014/2015</option>
+                                <option value="2013/2014">2013/2014</option>
+                                <option value="2012/2013">2012/2013</option>
+                                <option value="2011/2012">2011/2012</option>
+                                <option value="2010/2011">2010/2011</option>
+                            </select>
+                        </div>
+                        <div>
+                            Ime i prezime<br>
+                            <input type="text" name="ime" value="" id="ime">
+                        </div>
+                        <div>
+                            Index<br>
+                            <input type="number" name="index" value="" >
+                        </div>
+                        <div>
+                            Email<br>
+                            <input type="email" name="email" value="">
+                        </div>
+                        <div>
+                            <input type="submit" value="Unesi" name="submit">
+                        </div>
+                        <div style="background-color: orangered" id="ispisGreski1">
+                        </div>
+                    </form>
+                </div>
+                <div class="grupa">
+                    <form name="fMasovni" onsubmit="drugaFormaSubmit(event)">
+                        <div>
+                            Masovni unos
+                        </div>
+                        <div>
+                            Godina<br>
+                            <select name="godina">
+                                <option value="2018/2019">2018/2019</option>
+                                <option value="2017/2018">2017/2018</option>
+                                <option value="2016/2017">2016/2017</option>
+                                <option value="2015/2016">2015/2016</option>
+                                <option value="2014/2015">2014/2015</option>
+                                <option value="2013/2014">2013/2014</option>
+                                <option value="2012/2013">2012/2013</option>
+                                <option value="2011/2012">2011/2012</option>
+                                <option value="2010/2011">2010/2011</option>
+                            </select>
+                        </div>
+                        <div class="dolejedan">
+                            CSV file <br>
+                            <input type="file" name="csv lista"/>
+                        </div>
+                        <div>
+                            <input type="submit" value="Unesi" name="submit">
+                        </div>
+                        <div style="background-color: orangered" id="ispisGreski2"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p><b>Web tehnologije 2018/19</b></p>
+        </div>
+
+    </div>
+    <script src="./validacija.js"></script>
+    <script src="./addStudent.js"></script>
+</body>
+</html>

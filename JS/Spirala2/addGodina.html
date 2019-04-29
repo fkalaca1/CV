@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 8</title>
+    <link rel="stylesheet" href="addGodina.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header" >
+                <div ><img src="slike/logo.jpg" alt="logo" id="logo"> 
+                <div id="meni">
+                    <a href="studenti.html" target="_blank">Z2</a>
+                    <a href="zadaci.html" target="_blank">Z3</a>
+                    <a href="commiti.html" target="_blank">Z4</a>
+                    <a href="addZadatak.html" target="_blank">Z5</a>
+                    <a href="addVjezba.html" target="_blank">Z6</a>
+                    <a href="addStudent.html" target="_blank">Z7</a>
+                    <a href="addGodina.html" target="_blank"> Z8</a>
+                </div>
+            </div>
+            <h2>Dodavanje godine</h2>
+        </div>
+
+        <div class="content">
+            <div id="side">
+                <form onsubmit="formaAGodina(event)">
+                Unos godine:
+                <div>
+                    Naziv godine
+                    <input type="text" name="naziv" value="">
+                </div>
+                <div>
+                    Naziv repozitorija vježbe
+                    <input type="text" name="rvjezbe" value="">
+                </div>
+                <div>
+                    Naziv repozitorija spirale
+                    <input type="text" name="rspirale" value="">
+                </div>
+                <div class="zaButtone">
+                    <button type="reset" value="Reset">Poništi</button>
+                    <input type="submit" value="Unesi">
+                </div>
+                <div style="background-color: orangered" id="ispisGreske">
+                </div>
+                </form>
+            </div>
+            <div id="glavniSadrzaj">
+                <div class="pravougaonik">
+                    <div class="godina">
+                        2015/16
+                        <div>
+                            <b>Broj studenata:</b> 90
+                        </div>
+                        <div>
+                            <b>Broj vježbi:</b> 10
+                        </div>
+                        <div>
+                                <b>Broj spirala:</b>  4
+                        </div>
+                    </div>
+                    <div class="godina">
+                        2016/17
+                        <div>
+                            <b>Broj studenata:</b> 90
+                        </div>
+                        <div>
+                            <b>Broj vježbi:</b> 10
+                        </div>
+                        <div>
+                                <b>Broj spirala:</b>  4
+                        </div>
+                    </div>
+                </div>
+                <div class="pravougaonik">
+                    <div class="godina">
+                        2015/16
+                        <div>
+                            <b>Broj studenata:</b> 90
+                        </div>
+                        <div>
+                            <b>Broj vježbi:</b> 10
+                        </div>
+                        <div>
+                                <b>Broj spirala:</b>  4
+                        </div>
+                    </div>
+                    <div class="godina">
+                        2016/17
+                        <div>
+                            <b>Broj studenata:</b> 90
+                        </div>
+                        <div>
+                            <b>Broj vježbi:</b> 10
+                        </div>
+                        <div>
+                                <b>Broj spirala:</b>  4
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p><b>Web tehnologije 2018/19</b></p>
+        </div>
+    
+    </div>  
+</body>
+<script src="./validacija.js"></script>
+<script src="./addGodina.js"></script>
+</html>

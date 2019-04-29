@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 6</title>
+    <link rel="stylesheet" href="addVjezba.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header" >
+                <div ><img src="slike/logo.jpg" alt="logo" id="logo"> 
+                <div id="meni">
+                    <a href="studenti.html" target="_blank">Z2</a>
+                    <a href="zadaci.html" target="_blank">Z3</a>
+                    <a href="commiti.html" target="_blank">Z4</a>
+                    <a href="addZadatak.html" target="_blank">Z5</a>
+                    <a href="addVjezba.html" target="_blank">Z6</a>
+                    <a href="addStudent.html" target="_blank">Z7</a>
+                    <a href="addGodina.html" target="_blank"> Z8</a>
+                </div>
+            </div>
+            <h2>Dodavanje vjezbe/spirale</h2>
+        </div>
+
+        <div class="content">
+            <div id="glavniSadrzaj">
+                <div class="grupa">
+                    <form name="fPostojeca"  onsubmit="fPostojecaFormaSubmit(event)">
+                        <div>
+                            Dodavanje postojeće vježbe/ spirale
+                        </div>
+                        <div>
+                            Godina<br>
+                            <select name="sGodine">
+                                <option value="2018/2019">2018/2019</option>
+                                <option value="2017/2018">2017/2018</option>
+                                <option value="2016/2017">2016/2017</option>
+                                <option value="2015/2016">2015/2016</option>
+                                <option value="2014/2015">2014/2015</option>
+                                <option value="2013/2014">2013/2014</option>
+                                <option value="2012/2013">2012/2013</option>
+                                <option value="2011/2012">2011/2012</option>
+                                <option value="2010/2011">2010/2011</option>   
+                            </select>
+                        </div>
+                        <div>
+                            Vježbe/Spirale<br>
+                            <select name="sVjezbe">
+                                <option value="1">Vjezba 1</option>
+                                <option value="2">Vjezba 2</option>
+                                <option value="3">Vjezba 3</option>
+                                <option value="4">Vjezba 4</option>
+                                <option value="5">Vjezba 5</option>
+                                <option value="6">Vjezba 6</option>
+                                <option value="7">Vjezba 7</option>
+                                <option value="7">Vjezba 8</option>
+                                <option value="7">Vjezba 9</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="submit" value="Dodaj" name="submit">
+                        </div>
+                        <div style="background-color: orangered" id="ispisGreski1">
+                        </div>
+                    </form>
+                </div>
+                <div class="grupa">
+                    <form name="fNova" onsubmit="fNovaFormaSubmit(event)">
+                        <div>
+                            Nova vježba/ spirala
+                        </div>
+                        <div>
+                            Naziv vježbe<br><br>
+                            <input type="text" name="naziv" value="">
+                        </div>
+                        <div>
+                            Godina<br>
+                            <select name="sGodine">
+                                <option value="2018/2019">2018/2019</option>
+                                <option value="2017/2018">2017/2018</option>
+                                <option value="2016/2017">2016/2017</option>
+                                <option value="2015/2016">2015/2016</option>
+                                <option value="2014/2015">2014/2015</option>
+                                <option value="2013/2014">2013/2014</option>
+                                <option value="2012/2013">2012/2013</option>
+                                <option value="2011/2012">2011/2012</option>
+                                <option value="2010/2011">2010/2011</option>
+                            </select>
+                        </div>
+                        <div>
+                            <ul style="list-style-type:none">
+                                <li>Zadatak 1</li>
+                                <li>Zadatak 2</li>
+                                <li>Zadatak 3</li>
+                            </ul>
+                        </div>  
+                        <div class="dolejedan">
+                            <div class="doledva">
+                                <div>
+                                <select name="sZadatak">
+                                    <option value="1">Zadatak 1</option>
+                                    <option value="2">Zadatak 2</option>
+                                </select>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="spirala" value="Da">Spirala
+                                </div>
+                            </div>
+                            <div class="doledva">
+                                <div>
+                                    <button type="button" name="dZadatak">Dodaj Zadatak</button>
+                                </div>
+                                <div id="opa">
+                                    <input type="submit" value="Dodaj">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background-color: orangered" id="ispisGreski2">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p><b>Web tehnologije 2018/19</b></p>
+        </div>
+    
+    </div>
+</body>
+<script src="./validacija.js"></script>
+<script src="./addVjezba.js"></script>
+</html>

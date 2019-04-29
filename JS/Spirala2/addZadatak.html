@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 5</title>
+    <link rel="stylesheet" href="addZadatak.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header" >
+                <div ><img src="slike/logo.jpg" alt="logo" id="logo"> 
+                <div id="meni">
+                    <a href="studenti.html" target="_blank">Z2</a>
+                    <a href="zadaci.html" target="_blank">Z3</a>
+                    <a href="commiti.html" target="_blank">Z4</a>
+                    <a href="addZadatak.html" target="_blank">Z5</a>
+                    <a href="addVjezba.html" target="_blank">Z6</a>
+                    <a href="addStudent.html" target="_blank">Z7</a>
+                    <a href="addGodina.html" target="_blank"> Z8</a>
+                </div>
+            </div>
+            <h2>Dodavanje zadataka</h2>
+        </div>
+
+        <div class="content">
+            <div id="glavniSadrzaj">
+                <div>
+                <form id="noviZadatak" onsubmit="FormaSubmitAZ(event)">
+                    <br><br>
+                    Novi Zadatak
+                    <br><br>
+                    <div>
+                    Naziv Zadatak<br><br>
+                    <input type="text" name="naziv" value="">
+                    <br><br>
+                    Tekst postavke *<br><br>
+                    <input type="file" name="postavka"/>
+                    <br><br>
+                    Vježbe/Spirale<br><br>
+                    <select>
+                            <option value="1">Vjezba 1</option>
+                            <option value="2">Vjezba 2</option>
+                            <option value="3">Vjezba 3</option>
+                            <option value="4">Vjezba 4</option>
+                            <option value="5">Vjezba 5</option>
+                            <option value="6">Vjezba 6</option>
+                            <option value="7">Vjezba 7</option>
+                            <option value="7">Vjezba 8</option>
+                            <option value="7">Vjezba 9</option>
+                        </select>
+                    </div>
+                    <div class="divzabutton">
+                        <input type="submit" value="Dodaj">
+                    </div>
+                    <div style="background-color: orangered" id="ispisGreskiAZ"></div>
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p><b>Web tehnologije 2018/19</b></p>
+        </div>
+    
+    </div>
+</body>
+<script src="./validacija.js"></script>
+<script src="./addZadatak.js"></script>
+</html>

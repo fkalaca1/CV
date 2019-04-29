@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ba.unsa.etf.rma.fadil_kalaca17479.rma18fadil17479.DodavanjeKnjigeAkt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/naslovnaStr"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/uvodna" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/dNadjiSliku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nadji sliku"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imeAutora"
+            android:hint="Upisi ime autora"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nazivKnjige"
+            android:hint="Upisi naziv knjige"/>
+
+        <Spinner
+            android:id="@+id/sKategorijaKnjige"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/dUpisiKnjigu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="upisi knjigu"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp" />
+    <Button
+        android:id="@+id/dPonisti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ponisti"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp" />
+
+</LinearLayout>
+
+
